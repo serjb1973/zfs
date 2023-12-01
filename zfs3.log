@@ -1,0 +1,55 @@
+]0;root@zfs:~[root@zfs ~]# wget -O otus_task2.file --no-check-certificate "https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download"
+--2023-11-29 15:14:38--  https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download
+Resolving drive.google.com (drive.google.com)... 74.125.131.194, 2a00:1450:4010:c0e::c2
+Connecting to drive.google.com (drive.google.com)|74.125.131.194|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://drive.google.com/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download [following]
+--2023-11-29 15:14:38--  https://drive.google.com/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download
+Reusing existing connection to drive.google.com:443.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://doc-00-bo-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/0nsarql5s2oq8itk5piqnhpgt6ipvstb/1701270825000/16189157874053420687/*/1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG?e=download&uuid=7f698b07-08c6-4486-84c3-205201fc9914 [following]
+Warning: wildcards not supported in HTTP.
+--2023-11-29 15:14:43--  https://doc-00-bo-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/0nsarql5s2oq8itk5piqnhpgt6ipvstb/1701270825000/16189157874053420687/*/1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG?e=download&uuid=7f698b07-08c6-4486-84c3-205201fc9914
+Resolving doc-00-bo-docs.googleusercontent.com (doc-00-bo-docs.googleusercontent.com)... 173.194.73.132, 2a00:1450:4010:c0d::84
+Connecting to doc-00-bo-docs.googleusercontent.com (doc-00-bo-docs.googleusercontent.com)|173.194.73.132|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5432736 (5.2M) [application/octet-stream]
+Saving to: ‘otus_task2.file’
+
+ 0% [                                                                                                                                                                   ] 0           --.-K/s              15% [========================>                                                                                                                                          ] 858,271     4.04MB/s             52% [=====================================================================================>                                                                             ] 2,875,284   6.76MB/s             77% [============================================================================================================================>                                      ] 4,185,807   6.52MB/s             100%[==================================================================================================================================================================>] 5,432,736   6.83MB/s   in 0.8s   
+
+2023-11-29 15:14:44 (6.83 MB/s) - ‘otus_task2.file’ saved [5432736/5432736]
+
+]0;root@zfs:~[root@zfs ~]# ls -ls
+total 12432
+   8 -rw-------. 1 root root    5570 Apr 30  2020 anaconda-ks.cfg
+7108 -rw-r--r--. 1 root root 7275140 May 15  2020 [0m[38;5;9marchive.tar.gz[0m
+   8 -rw-------. 1 root root    5300 Apr 30  2020 original-ks.cfg
+5308 -rw-r--r--. 1 root root 5432736 May 15  2020 otus_task2.file
+   0 drwxr-xr-x. 2 root root      32 May 15  2020 [38;5;27mzpoolexport[0m
+]0;root@zfs:~[root@zfs ~]# ls -lswget -O otus_task2.file --no-check-certificate "https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pzfs get checksum otus[8@filesystem_limit[C[C[C[C[C[5Pcompression[C[C[C[C[C[1Precordsize[C[C[C[C[C[2Padonly[C[C[C[C[C[1@available[C[C[C[C[C[6Pll[C[C[C[C[C[2@pool[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pstatus[C[C[C[C[C[Kimport -d zpoolexport/ otus[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pls -ls[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -xzvf archive.tar.gz[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget -O archive.tar.gz --no-check-certificate 'https://drive.google.com/u/0/uc?id=1KRBNW33QWqbvbVHa3hLJivOAt60yukkg&export=download'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[86Pzfs get all | grep compressratio | grep -v ref[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clist[Kget all | grep compressratio | grep -v ref[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clist[Kls -l /otus*[4Pzfs list
+NAME             USED  AVAIL     REFER  MOUNTPOINT
+otus            2.04M   350M       24K  /otus
+otus/hometask2  1.88M   350M     1.88M  /otus/hometask2
+otus1           21.7M   330M     21.6M  /otus1
+otus2           17.7M   334M     17.6M  /otus2
+otus3           10.9M   341M     10.7M  /otus3
+otus4           39.2M   313M     39.1M  /otus4
+]0;root@zfs:~[root@zfs ~]# zfs receive otus/test@today < otus_task2.file
+]0;root@zfs:~[root@zfs ~]# zfs receive otus/test@today < otus_task2.file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clist[K
+NAME             USED  AVAIL     REFER  MOUNTPOINT
+otus            4.93M   347M       25K  /otus
+otus/hometask2  1.88M   347M     1.88M  /otus/hometask2
+otus/test       2.83M   347M     2.83M  /otus/test
+otus1           21.7M   330M     21.6M  /otus1
+otus2           17.7M   334M     17.6M  /otus2
+otus3           10.9M   341M     10.7M  /otus3
+otus4           39.2M   313M     39.1M  /otus4
+]0;root@zfs:~[root@zfs ~]# find /otus/test -name "secret_message"
+/otus/test/task1/file_mess/secret_message
+]0;root@zfs:~[root@zfs ~]# cat /otus/test/task1/file_mess/secret_message
+https://github.com/sindresorhus/awesome
+]0;root@zfs:~[root@zfs ~]# logout
+]0;vagrant@zfs:~[vagrant@zfs ~]$ logout
+[?2004h]0;serjb@serjb-VirtualBox: ~/work5[01;32mserjb@serjb-VirtualBox[00m:[01;34m~/work5[00m$ [?2004l
+exit
